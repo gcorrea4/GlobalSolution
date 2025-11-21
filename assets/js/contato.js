@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contactForm');
 
-   
     if (contactForm) {
         const nomeInput = document.getElementById('nome');
         const emailInput = document.getElementById('email');
@@ -17,43 +16,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
             let isValid = true;
             
-          
-            nomeError.style.display = 'none';
-            emailError.style.display = 'none';
-            mensagemError.style.display = 'none';
-            successMessage.style.display = 'none';
+            
+            nomeError.classList.add('oculto');
+            emailError.classList.add('oculto');
+            mensagemError.classList.add('oculto');
+            successMessage.classList.add('oculto');
 
-           
+            
             if (nomeInput.value.trim() === '') {
                 nomeError.textContent = 'Por favor, digite seu nome.';
-                nomeError.style.display = 'block';
+                
+                nomeError.classList.remove('oculto');
                 isValid = false;
             }
 
+     
             if (emailInput.value.trim() === '') {
                 emailError.textContent = 'Por favor, digite seu e-mail.';
-                emailError.style.display = 'block';
+                emailError.classList.remove('oculto');
                 isValid = false;
             } else if (!isValidEmail(emailInput.value.trim())) {
                 emailError.textContent = 'Por favor, digite um e-mail válido.';
-                emailError.style.display = 'block';
+                emailError.classList.remove('oculto');
                 isValid = false;
             }
 
+            
             if (mensagemInput.value.trim() === '') {
                 mensagemError.textContent = 'A mensagem não pode estar vazia.';
-                mensagemError.style.display = 'block';
+                mensagemError.classList.remove('oculto');
                 isValid = false;
             }
 
-         
+           
             if (isValid) {
-                successMessage.style.display = 'block';
+                successMessage.classList.remove('oculto');
                 contactForm.reset();
                 
-               
                 setTimeout(() => {
-                    successMessage.style.display = 'none';
+                    successMessage.classList.add('oculto');
                 }, 5000);
             }
         });
