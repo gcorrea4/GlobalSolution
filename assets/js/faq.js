@@ -1,16 +1,4 @@
-
 document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.querySelector(".hamburger");
-    const navMenu = document.querySelector(".nav-links");
-
-    if(hamburger) {
-        hamburger.addEventListener("click", () => {
-            hamburger.classList.toggle("active");
-            navMenu.classList.toggle("active");
-        });
-    }
-
-   
     const details = document.querySelectorAll("details");
 
     details.forEach((targetDetail) => {
