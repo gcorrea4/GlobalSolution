@@ -3,36 +3,67 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./assets/css/index.css"> 
-    <script src="../js/menu.js" defer></script>
-    
+    <link rel="stylesheet" href="assets/css/index.css">
     <title>Página Inicial | SkillFuture</title>
   </head>
   <body>
+    
     <header>
-      <h1>SkillFuture</h1>
-      <nav>
-        <a href="index.html" class="active" >Home</a> | 
-        <a href="/assets/page/solucao-dashboard.html">Solução</a> | 
-        <a href="/assets/page/sobre.html">Sobre</a> |
-        <a href="/assets/page/faq.html">FAQ</a> | 
-        <a href="/assets/page/integrantes.html">Equipe</a> | 
-        <a href="/assets/page/contato.html">Contato</a>
+      <nav class="navbar">
+        <a href="index.html" class="logo">Skill<span>Future</span></a>
+        
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="assets/page/solucao-dashboard.html">Solução</a></li>
+            <li><a href="assets/page/sobre.html">Sobre</a></li>
+            <li><a href="assets/page/faq.html">FAQ</a></li>
+            <li><a href="assets/page/integrantes.html">Equipe</a></li>
+            <li><a href="assets/page/contato.html" class="btn-contato">Contato</a></li>
+        </ul>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
       </nav>
     </header>
 
-    <main title="Página Inicial" class="Main-1">
-    <section class="hero">
-        <div class="hero-content">
-            <h1>O Futuro do seu Trabalho começa aqui</h1>
-            <p>Nossa Inteligência Artificial analisa suas skills atuais e cria uma trilha personalizada para as profissões de 2030.</p>
-            <a href="solucao-dashboard.html" class="cta-button">Descobrir minha Trilha</a>
-        </div>
-    </section>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>O Futuro do seu Trabalho começa aqui</h1>
+                <p>Nossa Inteligência Artificial analisa suas skills atuais e cria uma trilha personalizada para as profissões de 2030.</p>
+                <a href="/assets/page/solucao-dashboard.html" class="cta-button">Descobrir minha Trilha</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Como funciona o SkillFuture?</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <span class="emoji-icon">🧠</span>
+                    <h3>1. Análise de Skills</h3>
+                    <p>Nosso algoritmo Python mapeia suas competências atuais e identifica gaps.</p>
+                </div>
+                <div class="card">
+                    <span class="emoji-icon">📈</span>
+                    <h3>2. Tendências de Mercado</h3>
+                    <p>Cruzamos seu perfil com dados reais sobre as profissões do futuro.</p>
+                </div>
+                <div class="card">
+                    <span class="emoji-icon">🗺️</span>
+                    <h3>3. Trilha Personalizada</h3>
+                    <p>Receba um plano de estudos prático para evoluir na carreira.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
       <p>&copy; Todos os direitos reservados - 2025.</p>
     </footer>
+
+    <script src="assets/js/menu.js"></script>
   </body>
 </html>
