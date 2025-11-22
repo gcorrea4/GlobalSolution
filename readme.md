@@ -22,7 +22,7 @@ Nossa solução é uma plataforma de **Upskilling e Reskilling** guiada por Inte
 
 A versão final do site está publicada e pode ser acessada através do link abaixo:
 
-### 👉 [CLIQUE AQUI PARA ACESSAR O SITE AO VIVO](https://gcorrea4.github.io/Challenge-Sprint/)
+### 👉 [CLIQUE AQUI PARA ACESSAR O SITE AO VIVO](https://gcorrea4.github.io/GlobalSolution/)
 
 *(Dica: Segure CTRL + Clique para abrir em nova guia)*
 
@@ -56,10 +56,10 @@ A versão final do site está publicada e pode ser acessada através do link aba
 ## 📸 Screenshots do Projeto
 
 ### 🖥️ Versão Desktop
-![Home Desktop](./assets/img/desktop.pngpng)
+![Home Desktop](./assets/img/desktop.png)
 
 ### 📱 Versão Mobile
-![Menu Mobile](./assets/img/mobile.png.png)
+![Menu Mobile](./assets/img/mobile.png)
 
 ---
 
@@ -67,9 +67,9 @@ A versão final do site está publicada e pode ser acessada através do link aba
 
 | Integrante | RM | Links |
 | :--- | :--- | :--- |
-| **Gabriel Correa** | 567903 | [GitHub](https://github.com/gcorrea4) \| [LinkedIn](https://linkedin.com/in/seu-linkedin) |
-| **Kayque Duarte** | 567980 | [GitHub](https://github.com/Kayque2012) \| [LinkedIn](https://linkedin.com/in/seu-linkedin) |
-| **Eric Maciel** | 567398 | [GitHub](https://github.com/Eric-devops-tech) \| [LinkedIn](https://linkedin.com/in/seu-linkedin) |
+| **Gabriel Correa** | 567903 | [GitHub](https://github.com/gcorrea4) \| [LinkedIn](https://www.linkedin.com/in/gabriel-correa-souza-763135271/) |
+| **Kayque Duarte** | 567980 | [GitHub](https://github.com/Kayque2012) \| [LinkedIn](https://www.linkedin.com/in/kayque-duarte-b24313361) |
+| **Eric Maciel** | 567398 | [GitHub](https://github.com/Eric-devops-tech) \| [LinkedIn](https://www.linkedin.com/in/eric-maciel-144058389) |
 
 ---
 
