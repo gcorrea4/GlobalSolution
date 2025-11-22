@@ -54,13 +54,21 @@ header {
     border-radius: 8px; 
 }
 
-.hamburger { display: none; cursor: pointer; }
-.bar { width: 25px; height: 3px; background: var(--branco); margin: 5px 0; }
+.hamburger { 
+    display: none; 
+    cursor: pointer; 
+    z-index: 101;
+    width: 30px;
+    height: 25px;
+}
 
-main {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+.bar { 
+    display: block;
+    width: 100%;
+    height: 3px; 
+    background-color: #FFFFFF !important; 
+    margin: 5px 0; 
+    transition: 0.3s;
 }
 
 .solution-hero {
@@ -186,8 +194,8 @@ footer {
         flex-direction: column; 
         background: var(--cor-secundaria); 
         width: 100%; padding: 20px 0; 
-        transition: 0.3s; 
-        box-shadow: 0 5px 10px rgba(0,0,0,0.5); 
+        box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+        z-index: 99;
     }
     .nav-links.active { left: 0; }
 }

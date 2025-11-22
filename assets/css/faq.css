@@ -53,8 +53,22 @@ header {
     border-radius: 8px; 
 }
 
-.hamburger { display: none; cursor: pointer; }
-.bar { width: 25px; height: 3px; background: var(--branco); margin: 5px 0; }
+.hamburger { 
+    display: none; 
+    cursor: pointer; 
+    z-index: 101;
+    width: 30px;
+    height: 25px;
+}
+
+.bar { 
+    display: block;
+    width: 100%;
+    height: 3px; 
+    background-color: #FFFFFF !important; 
+    margin: 5px 0; 
+    transition: 0.3s;
+}
 
 main {
     padding: 60px 20px;

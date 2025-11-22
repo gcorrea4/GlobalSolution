@@ -75,8 +75,22 @@ header {
 }
 .btn-contato:hover { background-color: #4f46e5; }
 
-.hamburger { display: none; cursor: pointer; }
-.bar { width: 25px; height: 3px; margin: 5px auto; background-color: var(--branco); transition: 0.3s; }
+.hamburger { 
+    display: none; 
+    cursor: pointer; 
+    z-index: 101;
+    width: 30px;
+    height: 25px;
+}
+
+.bar { 
+    display: block;
+    width: 100%;
+    height: 3px; 
+    background-color: #FFFFFF !important;
+    margin: 5px 0; 
+    transition: 0.3s;
+}
 
 main {
     text-align: center;
