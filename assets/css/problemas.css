@@ -142,3 +142,29 @@ main {
     text-transform: uppercase;
     margin-right: 5px;
 }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+footer { background: #020617; color: #94A3B8; padding: 40px 20px; text-align: center; margin-top: 60px; }
+
+
+@media (max-width: 992px) {
+    .interactive-panel {
+        grid-template-columns: 1fr; 
+        gap: 30px;
+    }
+    
+    .panel-menu {
+        flex-direction: row; 
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+    
+    .panel-btn {
+        white-space: nowrap; 
+    }
+}
