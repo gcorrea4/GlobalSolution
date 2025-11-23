@@ -91,3 +91,25 @@ main {
     color: var(--branco);
     border-color: var(--cor-primaria);
 }
+
+.panel-btn.active {
+    background-color: var(--cor-primaria);
+    color: var(--branco);
+    border-color: var(--cor-primaria);
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+}
+
+
+.panel-content {
+    padding: 20px;
+    position: relative;
+}
+
+.content-item {
+    display: none; 
+    animation: fadeIn 0.5s ease;
+}
+
+.content-item.active {
+    display: block; 
+}
