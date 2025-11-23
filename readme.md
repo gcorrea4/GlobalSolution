@@ -31,25 +31,33 @@ A versão final do site está publicada e pode ser acessada através do link aba
 ## ✨ Funcionalidades e Páginas Implementadas
 
 * **Design Totalmente Responsivo:** O layout de todas as 7 páginas se adapta perfeitamente aos 5 breakpoints exigidos (celulares, tablets, laptops e desktops), utilizando **CSS Grid**, **Flexbox** e **Media Queries**.
-* **Validação de Formulários:** A página de "Contato" possui validação de campos (nome, email, mensagem) feita com JavaScript puro, exibindo mensagens de erro dinâmicas.
-* **Manipulação do DOM:** O JavaScript é usado para exibir e esconder dinamicamente as mensagens de erro e sucesso do formulário.
-* **Estrutura Completa de 7 Páginas:** O projeto contém todas as páginas obrigatórias (Home, Equipe, Contato, FAQ, Sobre) e extras (Solução, Trilhas) com navegação consistente.
-* **FAQ Interativo:** Uso das tags `<details>` e `<summary>` com script para criar um efeito "sanfona" (abre um, fecha o outro).
-* **Integração com IA:** Página dedicada a explicar a arquitetura do Chatbot (Node-RED + Watson + Gemini) com link direto para o Telegram.
+* **Validação de Formulários:** A página de "Contato" possui validação de campos (nome, email, mensagem) feita com JavaScript puro, exibindo mensagens de erro dinâmicas e feedback visual.
+* **Manipulação do DOM:** O JavaScript é usado para controlar classes CSS, exibir modais de sucesso e alternar conteúdos dinamicamente.
+* **Estrutura Completa de 7 Páginas:** O projeto contém as páginas obrigatórias (Home, Equipe, Contato, FAQ, Sobre) e extras focadas na solução (Solução Dashboard, Problemas).
+* **Painel Interativo (Problemas):** Página dedicada aos desafios do futuro do trabalho, com navegação por abas laterais implementada via JavaScript.
+* **FAQ Interativo:** Uso de lógica de "acordeão" onde abrir uma pergunta fecha as outras automaticamente.
+* **Integração com IA:** Página dedicada a explicar a arquitetura do Chatbot (Node-RED + Watson + Gemini) com link direto para teste no Telegram.
 
 ---
 
 ## 🛠️ Estrutura e Tecnologias
 
-* **HTML5 Semântico:** Uso correto de tags como `<header>`, `<main>`, `<section>`, `<nav>`, `<article>`, etc.
-* **CSS3 Moderno:** Estilização avançada com Flexbox, Grid e Media Queries para garantir a responsividade. Tema Dark Mode com variáveis CSS (`:root`).
-* **JavaScript (ES6+):** Utilizado para validação de formulários, menu responsivo e manipulação do DOM.
+* **HTML5 Semântico:** Uso correto de tags como `<header>`, `<main>`, `<section>`, `<nav>`, `<article>`, `<details>`.
+* **CSS3 Moderno:** Estilização avançada com Flexbox, Grid e Media Queries para garantir a responsividade. Tema **Dark Mode** implementado com variáveis CSS (`:root`).
+* **JavaScript (ES6+):** Código modularizado e separado por responsabilidade (Menu, Validação, FAQ, Abas).
 * **Estrutura de Pastas Organizada:**
-    * `/assets/page` para HTML
-    * `/assets/css` para estilos
-    * `/assets/js` para scripts
-    * `/assets/img` para imagens
+    * `/assets/page` para arquivos HTML internos
+    * `/assets/css` para folhas de estilo
+    * `/assets/img` para imagens e assets
+    * `/assets/js` para scripts (modularizados)
 * **Git & GitHub:** Versionamento de código com histórico de commits da equipe.
+
+### 📂 Organização dos Scripts JS
+Para garantir performance e organização, os scripts foram separados:
+* `menu.js`: Controle do menu hambúrguer (global).
+* `contato.js`: Validação do formulário.
+* `faq.js`: Lógica do acordeão de perguntas.
+* `problemas.js`: Lógica das abas interativas da página de problemas.
 
 ---
 
