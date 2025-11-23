@@ -209,3 +209,49 @@ footer {
     .solution-hero h1 { font-size: 1.8rem; }
     .tech-architecture { padding: 25px; }
 }
+.secao-demonstracao {
+    text-align: center;
+    margin-top: 60px;
+    padding: 40px 20px;
+    background-color: var(--cor-secundaria);
+    border-radius: 20px;
+    border: 1px solid var(--cinza-claro);
+}
+
+.secao-demonstracao h2 {
+    font-size: 2rem;
+    color: var(--branco);
+    margin-bottom: 40px;
+}
+
+.galeria-chat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.print-chat {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: var(--sombra-suave);
+    border: 2px solid var(--cinza-claro);
+    transition: transform 0.3s ease;
+}
+
+.print-chat:hover {
+    transform: scale(1.03);
+    border-color: var(--cor-primaria);
+}
+
+@media (max-width: 768px) {
+    .galeria-chat {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .print-chat {
+        max-width: 100%;
+    }
+}
