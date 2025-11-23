@@ -53,3 +53,41 @@ main {
     max-width: 700px;
     margin: 0 auto;
 }
+
+.interactive-panel {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 40px;
+    background-color: var(--cor-secundaria);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid var(--cinza-claro);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    min-height: 400px;
+}
+
+
+.panel-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.panel-btn {
+    background: transparent;
+    border: 1px solid var(--cinza-claro);
+    color: #94A3B8;
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.panel-btn:hover {
+    background-color: rgba(99, 102, 241, 0.1);
+    color: var(--branco);
+    border-color: var(--cor-primaria);
+}
