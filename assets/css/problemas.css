@@ -1,3 +1,4 @@
+
 :root {
     --cor-fundo: #0F172A;
     --cor-secundaria: #1E293B;
@@ -19,6 +20,7 @@ body {
 
 a { text-decoration: none; transition: 0.3s; }
 
+
 header { background: var(--cor-secundaria); box-shadow: 0 4px 20px rgba(0,0,0,0.4); position: sticky; top: 0; z-index: 100; }
 .navbar { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; max-width: 1200px; margin: 0 auto; }
 .logo { font-size: 1.5rem; font-weight: 800; color: var(--branco); }
@@ -30,8 +32,9 @@ header { background: var(--cor-secundaria); box-shadow: 0 4px 20px rgba(0,0,0,0.
 .hamburger { display: none; cursor: pointer; }
 .bar { width: 25px; height: 3px; background: var(--branco); margin: 5px 0; }
 
+
 main {
-    padding: 60px 20px;
+    padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -42,44 +45,45 @@ main {
 }
 
 .problems-hero h1 {
-    font-size: 2.5rem;
+    font-size: 2rem; 
     color: var(--cor-primaria);
     margin-bottom: 15px;
 }
 
 .problems-hero p {
     color: #94A3B8;
-    font-size: 1.1rem;
+    font-size: 1rem;
     max-width: 700px;
     margin: 0 auto;
 }
+.hamburger { display: none; cursor: pointer; width: 30px; height: 25px; z-index: 101; }
+.bar { display: block; width: 100%; height: 3px; background-color: var(--branco) !important; margin: 5px 0; transition: 0.3s; }
 
 .interactive-panel {
-    display: grid;
-    grid-template-columns: 1fr 2fr; 
-    gap: 40px;
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;
     background-color: var(--cor-secundaria);
-    padding: 40px;
+    padding: 20px;
     border-radius: 20px;
     border: 1px solid var(--cinza-claro);
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    min-height: 400px;
 }
 
 
 .panel-menu {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
 .panel-btn {
     background: transparent;
     border: 1px solid var(--cinza-claro);
     color: #94A3B8;
-    padding: 15px 20px;
+    padding: 15px;
     text-align: left;
-    font-size: 1rem;
+    font-size: 0.9rem;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
@@ -101,8 +105,9 @@ main {
 
 
 .panel-content {
-    padding: 20px;
+    padding: 10px;
     position: relative;
+    min-height: 300px; 
 }
 
 .content-item {
@@ -115,17 +120,17 @@ main {
 }
 
 .content-item h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--branco);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border-bottom: 2px solid var(--cinza-claro);
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 
 .content-item p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #CBD5E1;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .content-highlight {
@@ -135,6 +140,7 @@ main {
     border-radius: 0 8px 8px 0;
     color: var(--cor-destaque);
     font-weight: 500;
+    font-size: 0.9rem;
 }
 
 .content-highlight span {
@@ -148,35 +154,61 @@ main {
     to { opacity: 1; transform: translateY(0); }
 }
 
-
 footer { background: #020617; color: #94A3B8; padding: 40px 20px; text-align: center; margin-top: 60px; }
 
 
-@media (max-width: 992px) {
+@media (min-width: 600px) {
+    .problems-hero h1 { font-size: 2.2rem; }
+    .panel-btn { font-size: 1rem; }
+    .content-item h2 { font-size: 1.8rem; }
+}
+
+
+@media (min-width: 768px) {
+    
     .interactive-panel {
-        grid-template-columns: 1fr; 
-        gap: 30px;
-    }
-    
-    .panel-menu {
-        flex-direction: row; 
-        overflow-x: auto;
-        padding-bottom: 10px;
-    }
-    
-    .panel-btn {
-        white-space: nowrap; 
+        padding: 40px;
     }
 }
 
-@media (max-width: 768px) {
-    .hamburger { display: block; }
-    .nav-links { position: fixed; left: -100%; top: 70px; flex-direction: column; background: var(--cor-secundaria); width: 100%; padding: 20px 0; transition: 0.3s; box-shadow: 0 5px 10px rgba(0,0,0,0.5); z-index: 99; }
-    .nav-links.active { left: 0; }
-    
-    .panel-menu {
-        flex-direction: column; 
+
+@media (min-width: 992px) {
+    .navbar { padding: 15px 30px; }
+
+   
+    .interactive-panel {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 40px;
     }
     
-    .content-item h2 { font-size: 1.5rem; }
+    .panel-menu {
+        gap: 15px;
+    }
+    
+    .content-item h2 { font-size: 2rem; }
+    .content-item p { font-size: 1.1rem; }
+}
+
+
+@media (min-width: 1300px) {
+    main {
+        padding: 60px 0;
+    }
+    .problems-hero h1 { font-size: 3rem; }
+}
+
+
+@media (max-width: 768px) {
+    .hamburger { display: block; }
+    .nav-links { 
+        position: fixed; left: -100%; top: 70px; 
+        flex-direction: column; 
+        background: var(--cor-secundaria); 
+        width: 100%; padding: 20px 0; 
+        transition: 0.3s; 
+        box-shadow: 0 5px 10px rgba(0,0,0,0.5); 
+        z-index: 99;
+    }
+    .nav-links.active { left: 0; }
 }
