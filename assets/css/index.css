@@ -245,3 +245,53 @@ footer {
     
     .card { padding: 20px; }
 }
+.chamada-problema {
+    background-color: #172033; 
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 1px solid var(--cinza-claro);
+    border-bottom: 1px solid var(--cinza-claro);
+}
+
+.container-chamada {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.chamada-problema h2 {
+    color: var(--branco);
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.chamada-problema p {
+    color: #9CA3AF;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+
+.btn-alerta {
+    background-color: transparent;
+    border: 2px solid var(--cor-destaque); 
+    color: var(--cor-destaque);
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1rem;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-alerta:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-secundaria); 
+    box-shadow: 0 0 15px rgba(34, 211, 238, 0.4); 
+    transform: translateY(-3px);
+}
+
+
+@media (max-width: 600px) {
+    .chamada-problema h2 { font-size: 1.5rem; }
+    .btn-alerta { width: 100%; }
+}
