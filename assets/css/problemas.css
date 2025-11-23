@@ -1,0 +1,31 @@
+:root {
+    --cor-fundo: #0F172A;
+    --cor-secundaria: #1E293B;
+    --cor-texto: #F3F4F6;
+    --cor-primaria: #6366F1;
+    --cor-destaque: #22D3EE;
+    --cinza-claro: #334155;
+    --branco: #FFFFFF;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+}
+
+a { text-decoration: none; transition: 0.3s; }
+
+header { background: var(--cor-secundaria); box-shadow: 0 4px 20px rgba(0,0,0,0.4); position: sticky; top: 0; z-index: 100; }
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; max-width: 1200px; margin: 0 auto; }
+.logo { font-size: 1.5rem; font-weight: 800; color: var(--branco); }
+.logo span { color: var(--cor-primaria); }
+.nav-links { display: flex; gap: 25px; list-style: none; }
+.nav-links a { font-weight: 600; color: #E2E8F0; }
+.nav-links a:hover, .nav-links a.active { color: var(--cor-primaria); }
+.btn-contato { background: var(--cor-primaria); color: #fff !important; padding: 8px 20px; border-radius: 8px; }
+.hamburger { display: none; cursor: pointer; }
+.bar { width: 25px; height: 3px; background: var(--branco); margin: 5px 0; }
