@@ -1,10 +1,10 @@
 # 🚀 SkillFuture - O Futuro do Trabalho
 
-![Status](https://img.shields.io/badge/Status-Global%20Solution%20Entregue-brightgreen?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Projeto%20Finalizado-brightgreen?style=for-the-badge)
 ![Tecnologias](https://img.shields.io/badge/Tech-HTML%20%7C%20CSS%20%7C%20JS-blueviolet?style=for-the-badge)
 ![Responsive](https://img.shields.io/badge/Design-Totalmente%20Responsivo-orange?style=for-the-badge)
 
-> **Global Solution 2025 - FIAP**
+> **Projeto desenvolvido para a Global Solution 2025 - FIAP**
 >
 > *Tema: O Futuro do Trabalho*
 
@@ -24,61 +24,45 @@ A versão final do site está publicada e pode ser acessada através do link aba
 
 ### 👉 [CLIQUE AQUI PARA ACESSAR O SITE AO VIVO](https://gcorrea4.github.io/GlobalSolution/)
 
-*(Dica: Segure CTRL + Clique para abrir em nova guia)*
+---
+
+## ✨ Funcionalidades e Diferenciais Técnicos
+
+* **Design Totalmente Responsivo:** Layout adaptado para 5 breakpoints (celulares, tablets, laptops e desktops), utilizando **CSS Grid**, **Flexbox** e **Media Queries**.
+* **Validação de Formulários:** Sistema de feedback dinâmico em JavaScript puro para a página de contato.
+* **Manipulação Avançada do DOM:** Controle de estados, modais e navegação dinâmica sem o uso de bibliotecas externas.
+* **Painel Interativo de Problemas:** Sistema de navegação por abas laterais customizado.
+* **FAQ Inteligente:** Lógica de acordeão com auto-fechamento.
+* **Arquitetura de IA (SkillUp):** O site apresenta a solução de IA orquestrada via **Node-RED**, integrando **Google Gemini** e **IBM Watson**. Confira o repositório da IA [aqui](https://github.com/gcorrea4/skillup-ai-orchestrator).
 
 ---
 
-## ✨ Funcionalidades e Páginas Implementadas
+## 🛠️ Tecnologias e Organização
 
-* **Design Totalmente Responsivo:** O layout de todas as 7 páginas se adapta perfeitamente aos 5 breakpoints exigidos (celulares, tablets, laptops e desktops), utilizando **CSS Grid**, **Flexbox** e **Media Queries**.
-* **Validação de Formulários:** A página de "Contato" possui validação de campos (nome, email, mensagem) feita com JavaScript puro, exibindo mensagens de erro dinâmicas e feedback visual.
-* **Manipulação do DOM:** O JavaScript é usado para controlar classes CSS, exibir modais de sucesso e alternar conteúdos dinamicamente.
-* **Estrutura Completa de 7 Páginas:** O projeto contém as páginas obrigatórias (Home, Equipe, Contato, FAQ, Sobre) e extras focadas na solução (Solução Dashboard, Problemas).
-* **Painel Interativo (Problemas):** Página dedicada aos desafios do futuro do trabalho, com navegação por abas laterais implementada via JavaScript.
-* **FAQ Interativo:** Uso de lógica de "acordeão" onde abrir uma pergunta fecha as outras automaticamente.
-* **Integração com IA:** Página dedicada a explicar a arquitetura do Chatbot (Node-RED + Watson + Gemini) com link direto para teste no Telegram.
+* **HTML5 Semântico:** Estrutura focada em acessibilidade e SEO.
+* **CSS3 Moderno:** Uso de variáveis CSS (`:root`) para gerenciamento de cores e tema Dark Mode.
+* **JavaScript Modular:** Scripts separados por responsabilidade (`menu.js`, `contato.js`, `faq.js`, `problemas.js`).
 
 ---
 
-## 🛠️ Estrutura e Tecnologias
+## 📸 Screenshots
 
-* **HTML5 Semântico:** Uso correto de tags como `<header>`, `<main>`, `<section>`, `<nav>`, `<article>`, `<details>`.
-* **CSS3 Moderno:** Estilização avançada com Flexbox, Grid e Media Queries para garantir a responsividade. Tema **Dark Mode** implementado com variáveis CSS (`:root`).
-* **JavaScript (ES6+):** Código modularizado e separado por responsabilidade (Menu, Validação, FAQ, Abas).
-* **Estrutura de Pastas Organizada:**
-    * `/assets/page` para arquivos HTML internos
-    * `/assets/css` para folhas de estilo
-    * `/assets/img` para imagens e assets
-    * `/assets/js` para scripts (modularizados)
-* **Git & GitHub:** Versionamento de código com histórico de commits da equipe.
-
-### 📂 Organização dos Scripts JS
-Para garantir performance e organização, os scripts foram separados:
-* `menu.js`: Controle do menu hambúrguer (global).
-* `contato.js`: Validação do formulário.
-* `faq.js`: Lógica do acordeão de perguntas.
-* `problemas.js`: Lógica das abas interativas da página de problemas.
+<div align="center">
+  <img src="./assets/img/desktop.png" alt="Home Desktop" width="800">
+  <br>
+  <img src="./assets/img/mobile.png" alt="Menu Mobile" width="300">
+</div>
 
 ---
 
-## 📸 Screenshots do Projeto
+## 👨‍💻 Desenvolvedor
 
-### 🖥️ Versão Desktop
-![Home Desktop](./assets/img/desktop.png)
-
-### 📱 Versão Mobile
-![Menu Mobile](./assets/img/mobile.png)
-
----
-
-## 👨‍💻 Equipe
-
-| Integrante | RM | Links |
+| Nome | RM | Links |
 | :--- | :--- | :--- |
 | **Gabriel Correa** | 567903 | [GitHub](https://github.com/gcorrea4) \| [LinkedIn](https://www.linkedin.com/in/gabriel-correa-souza-763135271/) |
-| **Kayque Duarte** | 567980 | [GitHub](https://github.com/Kayque2012) \| [LinkedIn](https://www.linkedin.com/in/kayque-duarte-b24313361) |
-| **Eric Maciel** | 567398 | [GitHub](https://github.com/Eric-devops-tech) \| [LinkedIn](https://www.linkedin.com/in/eric-maciel-144058389) |
+
+> **Nota:** Este projeto foi realizado no contexto acadêmico da FIAP, sendo todo o desenvolvimento de Front-end e a arquitetura da solução SkillUp realizados integralmente por mim.
 
 ---
 
-© 2025 Todos os direitos reservados - 2025.
+© 2025 Gabriel Correa Souza.
